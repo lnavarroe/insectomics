@@ -14,7 +14,7 @@ window.SITE = {
   lab: {
     name: "InsectOmics",
     tagline: "InsectOmics Research Lab.",
-    intro: "We combine genomics, transcriptomics and microbiome science to understand how insects adapt to changing climates, new hosts and the chemicals we use against them.",
+    intro: "We combine genomics, transcriptomics, and microbiome science to understand how phytophagous insects adapt to plant hosts and the role of microbial symbionts in these processes. Our final goal is to harness this knowledge to design new tools and strategies for managing pest insects in agriculture.",
     institution: "Department of Entomology",
     email: "lucionavarro(at)cafedecolombia.com",
     address: ["Cenicafé - Planalto, ", "Km 4 vía Chinchiná-Manizales", "Manizales, 170001, Colombia"],
