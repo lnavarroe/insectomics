@@ -18,7 +18,9 @@ window.SITE = {
     institution: "Department of Entomology",
     email: "lucionavarro(at)cafedecolombia.com",
     address: ["Cenicafé - Planalto, ", "Km 4 vía Chinchiná-Manizales", "Manizales, 170001, Colombia"],
-    /*join: "We are looking for curious students and postdocs who enjoy both the bench and the command line. Send a short note about what excites you and a CV.",*/
+    /*
+    join: "We are looking for curious students and postdocs who enjoy both the bench and the command line. Send a short note about what excites you and a CV.",
+    */
     social: [
       { label: "GitHub", url: "https://github.com/lnavarroe" },
       { label: "ResearchGate", url: "https://www.researchgate.net/profile/Lucio-Navarro-Escalante?ev=hdr_xprf" },
@@ -28,7 +30,9 @@ window.SITE = {
       { label: "Insect species sequenced", value: "3" },
       { label: "Lab members", value: "3" },
       { label: "Open-source tools", value: "2" },
-      /*{ label: "Field sites", value: " countries" }/*
+      /*
+      { label: "Field sites", value: " countries" },
+      */
     ]
   },
 
@@ -110,13 +114,15 @@ window.SITE = {
       ]
     },
     groups: [
-      /*{
+      /*
+      {
         title: "Postdoctoral researchers",
         members: [
           { name: "Dr. Maya Okafor", role: "Postdoc", focus: "Thermal adaptation in Drosophila", photo: "", links: [{ label: "Email", url: "mailto:" }, { label: "GitHub", url: "https://github.com/" }] },
           { name: "Dr. Tomás Rivera", role: "Postdoc", focus: "Resistance genomics in mosquitoes", photo: "", links: [{ label: "Email", url: "mailto:" }] }
         ]
-      },*/
+      },
+      */
       {
         title: "Graduate students",
         members: [
