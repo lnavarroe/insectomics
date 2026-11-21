@@ -110,13 +110,13 @@ window.SITE = {
       ]
     },
     groups: [
-      {
+      /*{
         title: "Postdoctoral researchers",
         members: [
           { name: "Dr. Maya Okafor", role: "Postdoc", focus: "Thermal adaptation in Drosophila", photo: "", links: [{ label: "Email", url: "mailto:" }, { label: "GitHub", url: "https://github.com/" }] },
           { name: "Dr. Tomás Rivera", role: "Postdoc", focus: "Resistance genomics in mosquitoes", photo: "", links: [{ label: "Email", url: "mailto:" }] }
         ]
-      },
+      },*/
       {
         title: "Graduate students",
         members: [
