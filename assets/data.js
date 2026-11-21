@@ -16,9 +16,9 @@ window.SITE = {
     tagline: "Reading insect lives in their genomes.",
     intro: "We combine genomics, transcriptomics and microbiome science to understand how insects adapt to changing climates, new hosts and the chemicals we use against them.",
     institution: "Department of Entomology",
-    email: "lucionavarro@cafedecolombia.com",
+    email: "lucionavarro(at)cafedecolombia.com",
     address: ["Cenicafé - Planalto, ", "Km 4 vía Chinchiná-Manizales", "Manizales, 170001, Colombia"],
-    join: "We are looking for curious students and postdocs who enjoy both the bench and the command line. Send a short note about what excites you and a CV.",
+    /*join: "We are looking for curious students and postdocs who enjoy both the bench and the command line. Send a short note about what excites you and a CV.",*/
     social: [
       { label: "GitHub", url: "https://github.com/lnavarroe" },
       { label: "ResearchGate", url: "https://www.researchgate.net/profile/Lucio-Navarro-Escalante?ev=hdr_xprf" },
@@ -28,16 +28,16 @@ window.SITE = {
       { label: "Insect species sequenced", value: "3" },
       { label: "Lab members", value: "3" },
       { label: "Open-source tools", value: "2" },
-      { label: "Field sites", value: " countries" }
+      /*{ label: "Field sites", value: " countries" }/*
     ]
   },
 
   themes: [
     {
-      id: "adaptation", color: "a", glyph: "A",
-      title: "Adaptation genomics",
-      text: "How do insect populations respond to warming, drought and new environments? We use population genomics and experimental evolution to find the genetic changes behind local adaptation.",
-      tags: ["Population genomics", "Selection scans", "Climate"]
+      id: "interaction", color: "a", glyph: "A",
+      title: "Insect-plant molecular interactions",
+      text: "How do herbivorous insects overcome host-plant defenses? We use functional genomics and molecular biology to study the mechanisms that insects use for avoiding or manipulating plant immune responses.",
+      tags: ["Functional genomics", "Transcriptomics", "Physiology"]
     },
     {
       id: "resistance", color: "t", glyph: "T",
