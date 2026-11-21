@@ -20,9 +20,9 @@ window.SITE = {
     address: ["Cenicafé - Planalto, ", "Km 4 vía Chinchiná-Manizales", "Manizales, 170001, Colombia"],
     join: "We are looking for curious students and postdocs who enjoy both the bench and the command line. Send a short note about what excites you and a CV.",
     social: [
-      { label: "GitHub", url: "https://github.com/your-org" },
-      { label: "Bluesky", url: "https://bsky.app/profile/your-lab" },
-      { label: "Google Scholar", url: "https://scholar.google.com/" }
+      { label: "GitHub", url: "https://github.com/lnavarroe" },
+      { label: "ResearchGate", url: "https://www.researchgate.net/profile/Lucio-Navarro-Escalante?ev=hdr_xprf" },
+      { label: "Google Scholar", url: "https://scholar.google.com/citations?user=UatpOngAAAAJ&hl=en" }
     ],
     facts: [
       { label: "Insect species sequenced", value: "3" },
