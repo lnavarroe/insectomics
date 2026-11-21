@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InsectOmics Lab</title>
+  <meta name="description" content="InsectOmics studies how insect genomes, microbiomes and environments shape adaptation. Research, team, publications, tools and protocols.">
+  <meta property="og:title" content="InsectOmics Lab">
+  <meta property="og:description" content="Genomics, transcriptomics and microbiomes of insects.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#1F6B55">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,4 90,27 90,73 50,96 10,73 10,27' fill='%231F6B55'/><circle cx='50' cy='50' r='16' fill='%23D49A1E'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    // Apply saved theme before paint to avoid a flash
+    try { const t = localStorage.getItem('io-theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav wrap" aria-label="Main">
+      <a class="brand" href="#top" aria-label="InsectOmics home">
+        <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,4 90,27 90,73 50,96 10,73 10,27"/><circle cx="50" cy="50" r="16"/></svg>
+        <span>Insect<b>Omics</b></span>
+      </a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#protocols">Protocols</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO: compound-eye canvas, each facet is a nucleotide -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title">Reading insect lives in their genomes.</h1>
+          <p class="lede" id="hero-lede"></p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#research">Explore our research</a>
+            <a class="btn btn-ghost" href="#contact">Join the lab</a>
+          </div>
+        </div>
+        <div class="eye" aria-hidden="true">
+          <canvas id="eye-canvas"></canvas>
+          <div class="eye-legend">
+            <span class="base base-a">A</span><span class="base base-c">C</span><span class="base base-g">G</span><span class="base base-t">T</span>
+          </div>
+        </div>
+      </div>
+      <div class="wrap">
+        <dl class="facts" id="facts"></dl>
+      </div>
+    </section>
+
+    <section id="research" class="section">
+      <div class="wrap">
+        <header class="section-head">
+          <h2>Research interests</h2>
+          <p>The questions that connect everything we work on.</p>
+        </header>
+        <div class="interests" id="interests"></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-tint">
+      <div class="wrap">
+        <header class="section-head">
+          <h2>Projects</h2>
+          <p>Current and recent work, with who to talk to about each one.</p>
+        </header>
+        <div class="chips" id="project-filters" role="group" aria-label="Filter projects by theme"></div>
+        <div class="projects" id="project-list"></div>
+      </div>
+    </section>
+
+    <section id="team" class="section">
+      <div class="wrap">
+        <header class="section-head">
+          <h2>Team</h2>
+          <p>The people behind the sequences.</p>
+        </header>
+        <div id="team-list"></div>
+      </div>
+    </section>
+
+    <section id="publications" class="section section-tint">
+      <div class="wrap">
+        <header class="section-head">
+          <h2>Publications</h2>
+          <p>Lab members are highlighted. Search by title, author, journal or keyword.</p>
+        </header>
+        <div class="pub-controls">
+          <label class="search">
+            <span class="visually-hidden">Search publications</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+            <input type="search" id="pub-search" placeholder="Search publications" autocomplete="off">
+          </label>
+          <select id="pub-type" aria-label="Filter by type">
+            <option value="">All types</option>
+          </select>
+        </div>
+        <p class="pub-count" id="pub-count" aria-live="polite"></p>
+        <div id="pub-list"></div>
+      </div>
+    </section>
+
+    <section id="tools" class="section">
+      <div class="wrap">
+        <header class="section-head">
+          <h2>Tools and data</h2>
+          <p>Open-source software and datasets we build and maintain.</p>
+        </header>
+        <div class="tools" id="tool-list"></div>
+      </div>
+    </section>
+
+    <section id="protocols" class="section section-tint">
+      <div class="wrap">
+        <header class="section-head">
+          <h2>Protocols</h2>
+          <p>Bench and field methods we use every week. Open one to see materials and steps.</p>
+        </header>
+        <div class="protocols" id="protocol-list"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="wrap contact-grid">
+        <div>
+          <h2>Work with us</h2>
+          <p class="lede" id="join-text"></p>
+          <a class="btn btn-solid" id="contact-email" href="#">Email the lab</a>
+        </div>
+        <address id="contact-address"></address>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p id="footer-text"></p>
+      <ul class="footer-links" id="footer-links"></ul>
+    </div>
+  </footer>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>
