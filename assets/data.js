@@ -12,12 +12,12 @@
 
 window.SITE = {
   lab: {
-    name: "InsectOmics Lab",
+    name: "InsectOmics",
     tagline: "Reading insect lives in their genomes.",
     intro: "We combine genomics, transcriptomics and microbiome science to understand how insects adapt to changing climates, new hosts and the chemicals we use against them.",
-    institution: "Department of Entomology, Cenicafé",
+    institution: "Department of Entomology",
     email: "lucionavarro@cafedecolombia.com",
-    address: ["Planalto, ", "Km 4 vía Chinchiná-Manizales", "Manizales, 170001, Colombia"],
+    address: ["Cenicafé - Planalto, ", "Km 4 vía Chinchiná-Manizales", "Manizales, 170001, Colombia"],
     join: "We are looking for curious students and postdocs who enjoy both the bench and the command line. Send a short note about what excites you and a CV.",
     social: [
       { label: "GitHub", url: "https://github.com/your-org" },
@@ -28,7 +28,7 @@ window.SITE = {
       { label: "Insect species sequenced", value: "3" },
       { label: "Lab members", value: "3" },
       { label: "Open-source tools", value: "2" },
-      { label: "Field sites", value: "9 countries" }
+      { label: "Field sites", value: " countries" }
     ]
   },
 
