@@ -13,7 +13,7 @@
 window.SITE = {
   lab: {
     name: "InsectOmics",
-    tagline: "Reading insect lives in their genomes.",
+    tagline: "InsectOmics Research Lab.",
     intro: "We combine genomics, transcriptomics and microbiome science to understand how insects adapt to changing climates, new hosts and the chemicals we use against them.",
     institution: "Department of Entomology",
     email: "lucionavarro(at)cafedecolombia.com",
