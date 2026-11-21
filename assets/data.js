@@ -201,8 +201,6 @@ window.SITE = {
       venue: "ISME Journal", doi: "", pdf: "", code: "",
       keywords: ["pollinators", "microbiome", "parasites"]
     },
-
-   Complete list of scientific papers and products at Google Scholars
   ],
 
   tools: [
